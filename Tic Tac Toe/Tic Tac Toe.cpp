@@ -4,6 +4,8 @@
 
 // Sources : I used ChatGPT to help when I was going through syntax issues implmenting the switch menu after completing the tic tac toe code, the AI essentially gave me advice on adding curly brackets for each case's interior in order to better organize the code and prevent confusion
 
+// This code was created as a submittable project for my Object-Oriented Programming class and was made using knowledge and concepts explored in the class
+
 #include <iostream>
 using namespace std;
 
@@ -25,11 +27,11 @@ int main() {
         
         cout << "************************************************* \n";
         cout << " \n";
-        cout << "                    Welcome! \n";
+        cout << "              Welcome to Tic Tac Toe \n";
         cout << " \n";
         cout << "Please choose a number from the following options: \n";
         cout << " \n";
-        cout << "1. Play Tic Tac Toe \n";
+        cout << "1. Play \n";
         cout << "2. Exit \n";
         cout << " \n";
         cout << "************************************************* \n";
