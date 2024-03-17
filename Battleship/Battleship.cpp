@@ -4,6 +4,7 @@
 
 // Sources Used : ChatGPT for error correction/troubleshooting, and cplusplus.com for concepts such as rand and fixing instances of switch cases not working correctly using functions from <limits>
 
+// A lot of the code here is also sourced from the Tic Tac Toe Game I had created, it was helpful in recreating the game while loop with switching turns along with help rebuilding the board matrix.
 
 #include <iostream>
 #include <cstdlib> // Needed for operation of rand()
@@ -27,12 +28,12 @@ int main(){
 
         cout << "************************************************* \n";
         cout << " \n";
-        cout << "                    Welcome! \n";
+        cout << "              Welcome to Battleship! \n";
         cout << " \n";
         cout << "Please choose a number from the following options: \n";
         cout << " \n";
-        cout << "1. Play Battleship \n";
-        cout << "2. View Instructions \n";
+        cout << "1. Play \n";
+        cout << "2. How To Play \n";
         cout << "3. Exit \n";
         cout << " \n";
         cout << "************************************************* \n";
