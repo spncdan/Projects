@@ -48,7 +48,7 @@ int main() {
                 
                 done = false; // resetting this back to false allows us to replay the game if the user chooses to play again after playing once already
                 
-                char board[3][3] = {
+                char board[3][3] = { // This will be the matrix which shows the board the game will use
                     
                     /* 0   1   2 */
                     /* 0 */  {'-','-','-'},
@@ -104,7 +104,7 @@ int main() {
                         done = true;
                         break;
                     }
-                    
+                    // Checking for draw conditions
                     if (checkdraw(board) == true){
                         cout << " " << endl;
                         cout << "Draw!" << endl;
@@ -150,7 +150,7 @@ int main() {
                         done = true;
                         break;
                     }
-                    
+                    // Checking for draw conditions
                     if (checkdraw(board) == true){
                         cout << " " << endl;
                         cout << "Draw!" << endl;
