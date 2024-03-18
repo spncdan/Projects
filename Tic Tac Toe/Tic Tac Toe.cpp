@@ -2,7 +2,7 @@
 
 // Tic Tac Toe Project #1
 
-// Sources : I used ChatGPT to help when I was going through syntax issues implmenting the switch menu after completing the tic tac toe code, the AI essentially gave me advice on adding curly brackets for each case's interior in order to better organize the code and prevent confusion
+// Sources : I used ChatGPT to help when I was going through syntax issues implementing the switch menu after completing the tic tac toe code, the AI essentially gave me advice on adding curly brackets for each case's interior in order to better organize the code and prevent confusion when viewing it from an outside perspective
 
 // This code was created as a submittable project for my Object-Oriented Programming class and was made using knowledge and concepts explored in the class
 
