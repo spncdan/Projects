@@ -179,7 +179,7 @@ int main(){
                         board[user_input_row][user_input_col] = 'V'; // Changes the spot hit to a 'V' to show that they've hit an enemy ship
                         cmpboard[user_input_row][user_input_col] = 'X'; // Changes spot to 'X' on computer board to show it's ship was destroyed
                     }
-                    else if (cmpboard[user_input_row][user_input_col] == '-'){
+                    else if (cmpboard[user_input_row][user_input_col] == '-' or cmpboard[user_input_row][user_input_col] == '~'){ // else if you miss an enemy ship
                         cout << " " << endl;
                         cout << "Your strike did not hit any enemy ships." << endl;
                         cout << " " << endl;
