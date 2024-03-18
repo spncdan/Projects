@@ -1,6 +1,6 @@
 // CIS 3100
 
-// Battleship Project #1
+// Battleship Project #1 (See Project Requirements.png to see the question)
 
 // Sources Used : ChatGPT for error correction/troubleshooting, and cplusplus.com for concepts such as rand and fixing instances of switch cases not working correctly using functions from <limits>
 
@@ -57,7 +57,7 @@ int main(){
                 int cmp_ship_count = 0; // Will keep track of amount of ships which the computer has which comes into play for checking loss conditions
                 int player_ship_count = 0; // Will keep track of amount of ships which the player has which comes into play for checking loss conditions
 
-                 char board[5][5] = {
+                 char board[5][5] = { // The board in which the player will see
                     
                             /* 0    1    2    3    4  */
                     /* 0 */  {'-' ,'-' ,'-' ,'-' ,'-'},
