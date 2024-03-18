@@ -1,13 +1,14 @@
-// Sources : This is a version of a Lab which has a fully functioning map which tracks where the player has moved.
+// Sources : This is a version of Lab 3 Exercise 5 from my Labs Repository which has a fully functioning map which tracks where the player has moved and has been in previous turns.
 
-// This was a revision of this previous lab as with my knowledge of how to print and manipulate arrays I thought this was a great addition to this code I had made earlier.
+// This was a revision of this previous lab as I wanted to add my knowledge of how to print and manipulate matrixes to the mix.
 
 #include<iostream>
-#include<cstdlib>
+#include<cstdlib> // Used for the rand() function
 #include<ctime>
-#include<cmath>
+#include<cmath> // Used for the distance formula
 using namespace std;
 
+// Function Prototypes
 void printmap(char matrix[][32], int, int);
 
 int main() {
@@ -65,9 +66,9 @@ int main() {
                      {'_' ,'_' ,'_' ,'_' ,'_' ,'_', '_' ,'_' ,'_' ,'_' ,'_', '_' ,'_' ,'_' ,'_' ,'_', '_' ,'_' ,'_' ,'_' ,'_', '_' ,'_' ,'_' ,'_' ,'_', '_' ,'_' ,'_' ,'_' ,'_'}
     };
 
-    treasuremap[15][15] = 'X';
+    treasuremap[15][15] = 'X'; // Starting position of the player
 
-    printmap(treasuremap, 32, 32);
+    printmap(treasuremap, 32, 32); // Calling on our printmap function
     
     while (treasure == false){ // We want our loop to keep running while treasure is equal to false but we can also break the loop using break statements if needed
         
@@ -119,15 +120,15 @@ int main() {
             break;
         }
         else {
-            cout << "Invalid response." << endl; // We want our loop to keep running in the case where a user may accidentally input a wrong character
+            cout << "Invalid response." << endl; // We want our loop to keep running in the case where a user may accidentally input a wrong character or attempt to move outside of the given map.
         }
         
-        distance = sqrt(static_cast<double>((x-x1)*(x-x1)+(y-y1)*(y-y1))); // Distance formula given in lab guideline
+        distance = sqrt(static_cast<double>((x-x1)*(x-x1)+(y-y1)*(y-y1))); // Distance formula given in lab guideline (See Labs Repository)
         printmap(treasuremap, 32, 32); // Printing map for user to see progress and where they've been
         cout << "Your new coordinates are (" << x << "," << y << ") and your current distance from the treasure is " << distance << "." << endl; // Giving back coordinates and distance
         
         if (distance == 0){
-            cout << "Congratulations! It took you " << steps << " steps to find the treasure." << endl; // Giving the user how many steps it took to reach treasure
+            cout << "Congratulations! It took you " << steps << " steps to find the treasure." << endl; // Giving the user how many steps it took to reach treasure.
             break;
         }
     }
@@ -135,10 +136,11 @@ int main() {
     return 0;
 }
 
+// Function used to print the map after each loop within the while loop above.
 void printmap(char matrix[][32], int rows, int cols){
 
-    for(int i = 0; i < rows; i++){
-        for(int j = 0; j < cols; j++){
+    for(int i = 0; i < rows; i++){ // Cycles through every row
+        for(int j = 0; j < cols; j++){ // Cycles through every col within each specific row
             cout << matrix[i][j] << " ";
         }
      cout << endl;
