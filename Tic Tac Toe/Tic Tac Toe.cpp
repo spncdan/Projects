@@ -1,6 +1,6 @@
 // CIS 3100 3/13/2024
 
-// Tic Tac Toe Project #1
+// Tic Tac Toe Project #1 (See Project Requirements.png to see the question)
 
 // Sources : I used ChatGPT to help when I was going through syntax issues implementing the switch menu after completing the tic tac toe code, the AI essentially gave me advice on adding curly brackets for each case's interior in order to better organize the code and prevent confusion when viewing it from an outside perspective
 
