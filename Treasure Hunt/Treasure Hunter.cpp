@@ -30,7 +30,7 @@ int main() {
 
     // Creation of Map
 
-     char treasuremap[32][32] = { // Array Maximum sent to 30 due to the fact that the random generation of the treasure has it's coordinates places between 1 and 30 as shown above
+     char treasuremap[32][32] = { // Array Maximum sent to 32 to accomodate the outer lines of the map, and due to the fact that the random generation of the treasure has it's coordinates placed between 1 and 30 as shown above
                     
                      {'_' ,'_' ,'_' ,'_' ,'_' ,'_', '_' ,'_' ,'_' ,'_' ,'_', '_' ,'_' ,'_' ,'_' ,'_', '_' ,'_' ,'_' ,'_' ,'_', '_' ,'_' ,'_' ,'_' ,'_', '_' ,'_' ,'_' ,'_' ,'_'},       
                      {'|' ,' ' ,' ' ,' ' ,' ' ,' ', ' ' ,' ' ,' ' ,' ' ,' ', ' ' ,' ' ,' ' ,' ' ,' ', ' ' ,' ' ,' ' ,' ' ,' ', ' ' ,' ' ,' ' ,' ' ,' ', ' ' ,' ' ,' ' ,' ' ,'|'},
