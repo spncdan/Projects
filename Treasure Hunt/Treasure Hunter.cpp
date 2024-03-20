@@ -1,6 +1,8 @@
-// Sources : This is a version of Lab 3 Exercise 5 from my Labs Repository which has a fully functioning map which tracks where the player has moved and has been in previous turns.
+// Sources : This is a version of Lab 3 Exercise 5 from my Labs Repository
 
-// This was a revision of this previous lab as I wanted to add my knowledge of how to print and manipulate matrixes to the mix.
+// I added a fully functioning map which tracks where the player has moved and has been in previous turns.
+
+// This was a revision of this previous lab as I wanted to add my new found knowledge of how to print and manipulate matrixes to the mix.
 
 #include<iostream>
 #include<cstdlib> // Used for the rand() function
