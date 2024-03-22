@@ -1,4 +1,4 @@
-// CIS 3100 3/13/2024
+// CIS 3100
 
 // Tic Tac Toe Project #1 (See Project Requirements.png to see the question)
 
