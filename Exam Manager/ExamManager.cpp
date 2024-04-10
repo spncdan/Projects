@@ -129,7 +129,7 @@ int main(){
 
 // This will be our read3arrays function which serves the purpose of reading a set of data into three arrays
 // It possesses the parameters of exams 1-3 which along with k which represents the size of these arrays
-void read3arrays(double array1[], double array2[], double array3[], int k, ofstream& outFile){
+void read3arrays(double array1[], double array2[], double array3[], int k, ofstream& outFile){ // Using & reference parameter so changes are recorded in the main function.
 
     // When bringing data into the program use ifstream
     // Because this is the route to my exams.txt data, I will be using this specificly for my device.
@@ -166,7 +166,7 @@ void read3arrays(double array1[], double array2[], double array3[], int k, ofstr
 }
 
 // This will be our read1array function which serves the purpose of printing the elements of the nums array neatly. Will print 6 elements per line before a space is called.
-void print1array(double nums[], int k, ofstream& outFile){
+void print1array(double nums[], int k, ofstream& outFile){ // Using & reference parameter so changes are recorded in the main function.
     
     // prints out elements of array
     for(int i = 0; i < k; i++){
@@ -181,7 +181,7 @@ void print1array(double nums[], int k, ofstream& outFile){
 }
 
 // This will be our makeweightedavd function which takes values within the three exams and finds the weighted average.
-void makeweightedavg(double array1[], double array2[], double array3[], int k, double averages[], ofstream& outFile){
+void makeweightedavg(double array1[], double array2[], double array3[], int k, double averages[], ofstream& outFile){ // Using & reference parameter so changes are recorded in the main function.
 
     for(int i = 0; i < k; i++){
         // calling and keeping variables 0 after each loop
