@@ -55,7 +55,7 @@ int main(){
     // Done for the purpose of my own personal machine, if you wish to run the code change this route accordingly.
     ofstream outFile("/Users/danielandrews/Desktop/CIS 3100 HW #2/output.txt");
     
-    // Checking if outFile is opened and if so printing "Hello" into the file
+    // Checking if outFile is opened and if so running all of the functions defined and printing them into the file.
     if(outFile.is_open()) {
         
         // Calling upon our read3arrays function
