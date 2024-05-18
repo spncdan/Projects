@@ -1,0 +1,10 @@
+Aardvark 3 y
+AfricanWildDog 2 n
+Giraffe 5 n
+Hippo 2 n
+TigerFish 1 y
+SandTigerShark 4 n
+BrownBear 2 n
+Elephant 1 y
+EmperorPenguin 4 n
+Orca 2 y
