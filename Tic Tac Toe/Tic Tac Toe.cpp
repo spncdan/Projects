@@ -1,12 +1,9 @@
-// CIS 3100
-
-// Tic Tac Toe Project #1 (See Project Requirements.png to see the question)
-
 // Reflection : This code was definitely a fun build, I did come across syntax issues with using the switches to compliment the user input of the menu but was able to over the issue with some help from AI. Furthermore this project was a great way to test my knowledge of matrixes and how I can manipulate and change the data within them.
 
 // Sources : I used ChatGPT to help when I was going through syntax issues implementing the switch menu after completing the tic tac toe code, the AI essentially gave me advice on adding curly brackets for each case's interior in order to better organize the code and prevent confusion when viewing it from an outside perspective
 
 // This code was created as a submittable project for my Object-Oriented Programming class and was made using knowledge and concepts explored in the class along with help with from ChatGPT for helping with syntax issues.
+
 #include <iostream>
 using namespace std;
 
