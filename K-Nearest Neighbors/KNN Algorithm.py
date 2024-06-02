@@ -1,6 +1,7 @@
 
 # For my Project 2 I simply inputted the Pre-Made Data Handler Class, Naive Bayes Classifier, and Main(), afterwards I added the K-Nearest Neighbor Classifier and made enhancements to the main() in order to accommodate KNN.
 # ChatGPT helped for error checking and answered questions when I asked how I could go about making my code more efficient or general questions on steps I could take towards finishing the KNN classifier and implementing the SVM algorithm.
+# Very high possibility of me reworking this entirely with a brand new dataset, and implementation of the Support Vector Machine algorithm.
 
 import math
 import csv
