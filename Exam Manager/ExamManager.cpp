@@ -1,7 +1,3 @@
-// CIS 3100 4/2/2024
-
-// Homework #2
-
 /* data.txt contents for reference (data.txt included)
  
  90 75 95
