@@ -1,7 +1,3 @@
-// CIS 3100
-
-// Battleship Project #1 (See Project Requirements.png to see the question)
-
 // Reflection : I like to this of this project as an extension of the Tic Tac Toe project I had previously created before this one. It's apparent that many of the general logic is similar with the only difference being that this game plays as a singleplayer medium with random generation. I did run into issues with the switch statement that was fixed by an imported code from ChatGPT (more details below). Overall, while im proud of this project there is still much for me to learn.
 
 // Sources Used : ChatGPT for error correction/troubleshooting, and cplusplus.com for concepts such as rand and fixing instances of switch cases not working correctly using functions from <limits>
