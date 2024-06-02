@@ -1,10 +1,6 @@
-// CIS 3100
-
-// Sources : This is a version of Lab 3 Exercise 5 from my Labs Repository
-
 // I added a fully functioning map which tracks where the player has moved and has been in previous turns.
 
-// This was a revision of this previous lab as I wanted to add my new found knowledge of how to print and manipulate matrixes to the mix.
+// This was a revision of this previous lab in my object oriented programming class as I wanted to add my new found knowledge of how to print and manipulate matrixes to this program.
 
 #include<iostream>
 #include<cstdlib> // Used for the rand() function
