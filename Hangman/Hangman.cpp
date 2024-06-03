@@ -199,7 +199,7 @@ int main() {
                             continue; // Restart the loop if input was invalid
                         }
                         cout << " " << endl;
-                        if (isLetterGuessed(guessed_letter, current_progress, size)) { // making sure user doesn't reinput correct values.
+                        if (isLetterGuessed(guessed_letter, current_progress, size) == true) { // making sure user doesn't reinput correct values.
                             cout << "You've already guessed that letter. Please enter a different letter." << endl;
                         }
                     } while (isLetterGuessed(guessed_letter, current_progress, size));
