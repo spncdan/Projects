@@ -20,6 +20,7 @@ void wordtoguess(string[10], char[], int, string&);
 void printarray(char[12], int);
 bool checkloss(int);
 bool checkwin(char[], char[], int);
+bool isLetterGuessed(char, char[], int);
 
 // Main function
 int main() {
