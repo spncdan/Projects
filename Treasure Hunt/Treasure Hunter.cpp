@@ -16,10 +16,10 @@ int main() {
     
     int x=15,y=15; // Explorer's coordinates
     int x1,y1; // Treasure's coordinates
-    char direction;
-    float distance;
-    bool treasure=false;
-    int steps;
+    char direction; // N, S, W, E
+    float distance; // Distance will be a float and have decimal values most likely
+    bool treasure=false; // Boolean which will change depending on if distance = 0
+    int steps; // Keeping tracks of the amount of steps the player takes to show at the end of the game
     
     srand(time(0)); // secretly seed the rand function
     x1=rand( ) % 30 + 1; // set X1 to random between 1 and 30
