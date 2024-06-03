@@ -1,3 +1,7 @@
+// This program aims to read in the contents of a set of data into three arrays which represents scores on three seperate exams.
+// The program will neatly print into an output file the original data and then compute a weighted average of the scores and print that average.
+// Then the program will find the smallest score on each exam and it's position within the array.
+
 /* data.txt contents for reference (data.txt included)
  
  90 75 95
