@@ -1,5 +1,4 @@
 // This is a console based stock portfolio manager that allows the user to manage their investment portfolio, including adding, deleting, and viewing stocks, as well as calculating the total portfolio value.
-
 // Sources : Assistance with debugging the removal of stocks from the portfolio was provided by an AI chatbot (OpenAI's ChatGPT). ChatGPT helped me out in being able to make the menu neater and more user friendly, see the printport() function down below along with comments. ChatGPT helped guide me to implement essential functions such as stod() and the try{}catch{} functions which helped with the calculation of portfolio sum, see my new understanding of these functions and how they work below.
 
 #include <iostream>
