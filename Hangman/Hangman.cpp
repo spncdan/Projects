@@ -303,7 +303,6 @@ int main() {
 
 // Function which takes a random word from a string array and inputs each one of it's letters into a char array
 void wordtoguess(string arr[10], char arr1[], int size, string &word) { // & is a reference parameter to ensure that the changes to the word parameter stay the same in main
-
     // Random selection of word from the array
     int randomnum = rand() % 10;
     string selected_word = arr[randomnum];
@@ -316,7 +315,6 @@ void wordtoguess(string arr[10], char arr1[], int size, string &word) { // & is 
 
 // Function to print one dimensional array
 void printarray(char arr[12], int size) {
-
     for (int i = 0; i < size; i++) {
         cout << arr[i] << " ";
     }
@@ -324,7 +322,7 @@ void printarray(char arr[12], int size) {
 
 }
 
-// Function to find whether a user has already guessed a correct letter (sourced from chatgpt when trying to prevent users from being able to reinput correct letters)
+// Function to find whether a user has already guessed a correct letter (sourced from chatgpt when trying to prevent users from being able to reinput correct letters) (Currently not working)
 bool isLetterGuessed(char guessed_letter, char current_progress[], int size) {
     for (int i = 0; i < size; i++) {
         if (current_progress[i] == guessed_letter) {
@@ -346,7 +344,6 @@ bool checkwin(char arr1[], char arr2[], int size) {
 
 // Function which checks if player has lost by getting 6 wrong guesses
 bool checkloss(int wrong_guesses) {
-
     if (wrong_guesses >= 6) {
        return true; // if wrong_guesses exceeds or equals 6 it will return true
     }
