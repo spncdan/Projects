@@ -119,6 +119,7 @@ int main() {
         }
         else if (direction == 'X'){ // Player exits game
             cout << "Exiting program..." << endl;
+            treasure = true; // This will stop the while loop and exit the program here
             break;
         }
         else { // If player inputs wrong character or attempts to move outside map
