@@ -132,6 +132,7 @@ int main() {
         
         if (distance == 0){ // Distance == 0 means the player has arrived to the treasure
             cout << "Congratulations! It took you " << steps << " steps to find the treasure." << endl; // Giving the user how many steps it took to reach treasure.
+            treasure = true; // This will stop the while loop and exit the program here
             break;
         }
     }
