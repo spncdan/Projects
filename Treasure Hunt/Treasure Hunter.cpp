@@ -20,7 +20,8 @@ int main() {
     float distance; // Distance will be a float and have decimal values most likely
     bool treasure=false; // Boolean which will change depending on if distance = 0
     int steps; // Keeping tracks of the amount of steps the player takes to show at the end of the game
-    
+
+    // Randomly generating the location of the treasure
     srand(time(0)); // secretly seed the rand function
     x1=rand( ) % 30 + 1; // set X1 to random between 1 and 30
     y1=rand( ) % 30 + 1; // set X2 to random between 1 and 30
