@@ -76,59 +76,59 @@ int main() {
         cout << "Please enter a direction (N, S, W, E), or X to exit the program: " << endl;
         cin >> direction; // Asking user to input either N, S, W, E
         
-        if (direction == 'N' and y < 31){ // Inputting if else statements based on exercise guidelines, These boundaries help to make sure that the player does not leave the 30x30 boundary of the map by which the treasure spawns within
-            steps += 1;
-            y += 1;
-            if (treasuremap[y][x] == 'X'){ // This will prevent the '.' from overriding your starting position 'X'
+        if (direction == 'N' and y < 31){ // Player goes North (y < 31 prevents the player from leaving the confines of the array mapped out.)
+            steps += 1; // Adding to steps variable if conditions above are met
+            y += 1; // North means we add to the y coordinate
+            if (treasuremap[y][x] == 'X'){ // This will prevent the '.' from overriding your starting position 'X' to prevent confusion
                 treasuremap[y][x] = 'X';
             }
             else{
-                treasuremap[y][x] = '.';  
+                treasuremap[y][x] = '.'; // Changes position to '.' on array to show that the player has been here
             }
         }
-        else if (direction == 'S' and y > 0){ // y > 0 prevents the player from leaving the confines of the array mapped out.
-            steps += 1;
-            y -= 1;
-            if (treasuremap[y][x] == 'X'){
+        else if (direction == 'S' and y > 0){ // Player goes South (y > 0 prevents the player from leaving the confines of the array mapped out.)
+            steps += 1; // Adding to steps variable if conditions above are met
+            y -= 1; // South means we subtract from the y coordinate
+            if (treasuremap[y][x] == 'X'){ // This will prevent the '.' from overriding your starting position 'X' to prevent confusion
                 treasuremap[y][x] = 'X';
             }
             else{
-                treasuremap[y][x] = '.';  
+                treasuremap[y][x] = '.'; // Changes position to '.' on array to show that the player has been here
             }
         }
-        else if (direction == 'W' and x < 31){
-            steps += 1;
-            x += 1;
-            if (treasuremap[y][x] == 'X'){
+        else if (direction == 'W' and x < 31){ // Player goes West (x < 31 prevents the player from leaving the confines of the array mapped out.)
+            steps += 1; // Adding to steps variable if conditions above are met
+            x += 1; // West means we add to the x coordinate
+            if (treasuremap[y][x] == 'X'){ // This will prevent the '.' from overriding your starting position 'X' to prevent confusion
                 treasuremap[y][x] = 'X';
             }
             else{
-                treasuremap[y][x] = '.';  
+                treasuremap[y][x] = '.'; // Changes position to '.' on array to show that the player has been here
             }
         }
-        else if (direction == 'E' and x > 0){
-            steps += 1;
-            x -= 1;
-            if (treasuremap[y][x] == 'X'){
+        else if (direction == 'E' and x > 0){ // Player goes East (x > 0 prevents the player from leaving the confines of the array mapped out.)
+            steps += 1; // Adding to steps variable if conditions above are met
+            x -= 1; // East means we subtract from the x coordinate
+            if (treasuremap[y][x] == 'X'){ // This will prevent the '.' from overriding your starting position 'X' to prevent confusion
                 treasuremap[y][x] = 'X';
             }
             else{
-                treasuremap[y][x] = '.';  
+                treasuremap[y][x] = '.';  // Changes position to '.' on array to show that the player has been here
             }
         }
-        else if (direction == 'X'){
+        else if (direction == 'X'){ // Player exits game
             cout << "Exiting program..." << endl;
             break;
         }
-        else {
+        else { // If player inputs wrong character or attempts to move outside map
             cout << "Invalid response." << endl; // We want our loop to keep running in the case where a user may accidentally input a wrong character or attempt to move outside of the given map.
         }
         
-        distance = sqrt(static_cast<double>((x-x1)*(x-x1)+(y-y1)*(y-y1))); // Distance formula given in lab guideline (See Labs Repository)
+        distance = sqrt(static_cast<double>((x-x1)*(x-x1)+(y-y1)*(y-y1))); // Distance formula given in CIS 3100 lab guidelines
         printmap(treasuremap, 32, 32); // Printing map for user to see progress and where they've been
         cout << "Your new coordinates are (" << x << "," << y << ") and your current distance from the treasure is " << distance << "." << endl; // Giving back coordinates and distance
         
-        if (distance == 0){
+        if (distance == 0){ // Distance == 0 means the player has arrived to the treasure
             cout << "Congratulations! It took you " << steps << " steps to find the treasure." << endl; // Giving the user how many steps it took to reach treasure.
             break;
         }
