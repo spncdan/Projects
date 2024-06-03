@@ -13,6 +13,7 @@
 #include <iostream>
 #include <string>
 #include <cstdlib> // Used for rand() function
+#include <limits>
 using namespace std;
 
 // Function prototypes
