@@ -202,7 +202,7 @@ int main() {
                         if (isLetterGuessed(guessed_letter, current_progress, size) == true) { // making sure user doesn't reinput correct values.
                             cout << "You've already guessed that letter. Please enter a different letter." << endl;
                         }
-                    } while (isLetterGuessed(guessed_letter, current_progress, size));
+                    } while (isLetterGuessed(guessed_letter, current_progress, size) == true);
 
                     for (int i = 0; i < size; i++) { // for loop which will check if the guessed_letter is equal to any of the contents of the word to be guessed.
                         if (guessed_letter == word_to_guess[i]) {
