@@ -3,8 +3,12 @@
 // Sources: Error checking with ChatGPT and for general guidance when it came to invalid inputs and the hint system implementation.
 // (Easy = 4 lettered words, Normal = 6 lettered words, Hard = 8 lettered words, Insane = 12 lettered words)
 
-// THINGS TO WORK ON:
-// As of right now im working on refining error checking, invalid inputs, and a hint system.
+// CURRENT ISSUES:
+// Invalid inputs cause console to enter a fail-state (still working on fixing this)
+// Hint system is not functional yet
+// Reinputting already correct letters does not activate the do while loop
+
+// Right now the program is in a functional state, but I wish to improve and fix the notable issues above.
 
 #include <iostream>
 #include <string>
