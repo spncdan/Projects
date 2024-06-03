@@ -7,7 +7,7 @@
 // 4 Difficulties
 // Invalid inputs are error checked (ChatGPT assisted me heavily on these aspects of the code)
 // Hint system is implemented (ChatGPT assisted me in conceptualizing how to go about creating this)
-// Reinputting already correct letters does not activate the do while loop 
+// inputting already correct letters causes error which prompts you to renter a new letter
 
 #include <iostream>
 #include <string>
@@ -197,7 +197,7 @@ int main() {
                 printarray(current_progress, size); // Printing out the current progress of the player
                 cout << " " << endl;
 
-                do { // Sources from ChatGPT
+                do { // Sourced from ChatGPT
                     cout << "Please enter a letter: " << endl;
                     cin >> guessed_letter; // Prompting the user to enter a letter
                     if (cin.fail() || !isalpha(guessed_letter)) { // Checking if input failed or if the input is not an alphabetic character
@@ -208,10 +208,10 @@ int main() {
                     }
                     guessed_letter = tolower(guessed_letter); // Converting the guessed letter to lowercase to handle case insensitivity
                     cout << " " << endl;
-                    if (isLetterGuessed(guessed_letter, current_progress, size)) { // Checking if the guessed letter has already been guessed
+                    if (isLetterGuessed(guessed_letter, current_progress, size)) { // Checking if the guessed letter has already been correctly guessed
                         cout << "You've already guessed that letter. Please enter a different letter." << endl;
                     }
-                } while (isLetterGuessed(guessed_letter, current_progress, size)); // Looping if the guessed letter has already been guessed
+                } while (isLetterGuessed(guessed_letter, current_progress, size)); // Looping if the guessed letter has already been correctly guessed
 
                 for (int i = 0; i < size; i++) { // for loop which will check if the guessed_letter is equal to any of the contents of the word to be guessed.
                     if (guessed_letter == word_to_guess[i]) {
