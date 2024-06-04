@@ -1,4 +1,5 @@
 // This program is a Console-Based Player VS AI Battleship game.
+// Language: C++
 // Sources Used : ChatGPT for error correction/troubleshooting, and cplusplus.com for concepts such as rand and fixing instances of switch cases not working correctly using functions from <limits>
 // A lot of the code here is also sourced from the Tic Tac Toe Game I had created, it was helpful in recreating the game while loop with switching turns along with help rebuilding the board matrix
 // This code was created as a submittable project for my Object-Oriented Programming class and was made using knowledge and concepts explored in the class along with outside help from the sources specified above
