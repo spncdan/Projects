@@ -6,7 +6,7 @@
 
 #include<iostream>
 #include<cstdlib> // Used for the rand() function
-#include<ctime>
+#include<ctime> // Used for srand(time(0)) in generating location of treasure
 #include<cmath> // Used for the distance formula
 using namespace std;
 
