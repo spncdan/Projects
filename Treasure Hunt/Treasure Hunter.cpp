@@ -1,4 +1,5 @@
 // This program is a Console-Based Hidden Treasure game where the treasure coordinates are randomly generated each time the player begins the program and the player has to find the treasure by either going North, South, West, or East.
+// Language: C++
 // Each time the player moves, the distance between the player and the treasure is computed via the distance variable.
 // There is also a visual representation of the map to show where the player has been and hasn't been.
 // This was a revision of this previous lab in my object oriented programming class as I wanted to add my new found knowledge of how to print and manipulate matrixes to this program.
