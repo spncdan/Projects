@@ -11,7 +11,7 @@
 // inputting already correct letters causes error which prompts you to renter a new letter
 
 #include <iostream>
-#include <string>
+#include <string> // ensures that the program knows about the std::string class and it's methods.
 #include <cstdlib> // Used for rand() function
 #include <ctime> // to seed the random number generator
 #include <limits> // necessary for the operation of numeric_limits in order to help error check invalid inputs for switches
