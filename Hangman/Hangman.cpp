@@ -1,4 +1,5 @@
-/// This program is a Console-Based Hangman game which will have 4 difficulties which can be chosen by the player.
+// This program is a Console-Based Hangman game which will have 4 difficulties which can be chosen by the player.
+// Language: C++
 // I've made it so this game is based on individual inputting of letters as a guess rather than entire word guesses.
 // Sources: Error checking with ChatGPT and for general guidance when it came to invalid inputs and the hint system implementation.
 // (Easy = 4 lettered words, Normal = 6 lettered words, Hard = 8 lettered words, Insane = 12 lettered words)
