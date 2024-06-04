@@ -34,7 +34,7 @@
 
 #include <iostream>
 #include <fstream> // fstream is required for file operation in C++
-#include <string>
+#include <string> // ensures that the program knows about the std::string class and it's methods.
 
 using namespace std;
 
