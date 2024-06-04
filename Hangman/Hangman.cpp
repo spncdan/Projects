@@ -14,7 +14,7 @@
 #include <string>
 #include <cstdlib> // Used for rand() function
 #include <ctime> // to seed the random number generator
-#include <limits>
+#include <limits> // necessary for the operation of numeric_limits in order to help error check invalid inputs for switches
 using namespace std;
 
 // Function prototypes
