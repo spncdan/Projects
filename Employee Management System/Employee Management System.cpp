@@ -327,8 +327,22 @@ int Project_Manager::total_project_managers; // Defining total_project_managers
 
 int main() {
 
-    /* I want the program to have 20 prexisting employees as soon as it starts, as I plan on first creating a functioning menu which can take advantage
+    // I want the program to already have 20 prexisting employees at the start
+
+     /* I want the program to have 20 prexisting employees as soon as it starts, as I plan on first creating a functioning menu which can take advantage
     of the prexisting getters and setters within the classes. */
+
+    // Here is an example of the menu which will be utilized and the features it will have.
+    cout << "--------------------------------------------" << endl;
+    cout << " Welcome to the Employee Management System" << endl;
+    cout << "--------------------------------------------" << endl;
+    cout << endl;
+    cout << "1. Add Employee " << endl; // Adds an employee (user specifies occ -> user adds new employee after filling in required info to instantiate)
+    cout << "2. Remove Employee" << endl; // Removes an employee (user specifies occ -> user removes employee after typing name)
+    cout << "3. Edit Employee Info" << endl; // Will edit a prexisting employee's information (user specifies occ -> user types employee name -> displays emplyoee info -> user chooses what to edit) 
+    cout << "4. View Employee Info" << endl; // Will display all of an employee's information  (user specifies occ -> user types employee name -> all employee information is presented)
+    cout << "5. Export Employees" << endl; // Will export all the current employee's in the system into an txt file. (with all of the properties) 
+    cout << "6. Exit" << endl; // Exits program
 
     // Adding sample software developers
     Software_Developer DRoberts("Daniel Roberts", 23, 2394392345, "294 Austin Road", 12495, 348392, 5, "Python", 2, "Customer Data Analytics");
