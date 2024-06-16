@@ -327,7 +327,8 @@ int Project_Manager::total_project_managers; // Defining total_project_managers
 
 int main() {
 
-    // I want the program to already have 20 prexisting employees at the start
+    /* I want the program to have 20 prexisting employees as soon as it starts, as I plan on first creating a functioning menu which can take advantage
+    of the prexisting getters and setters within the classes. */
 
     // Adding sample software developers
     Software_Developer DRoberts("Daniel Roberts", 23, 2394392345, "294 Austin Road", 12495, 348392, 5, "Python", 2, "Customer Data Analytics");
