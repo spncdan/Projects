@@ -343,6 +343,7 @@ int main() {
     cout << "4. View Employee Info" << endl; // Will display all of an employee's information  (user specifies occ -> user types employee name -> all employee information is presented)
     cout << "5. Export Employees" << endl; // Will export all the current employee's in the system into an txt file. (with all of the properties) 
     cout << "6. Exit" << endl; // Exits program
+    cout << endl;
 
     // Adding sample software developers
     Software_Developer DRoberts("Daniel Roberts", 23, 2394392345, "294 Austin Road", 12495, 348392, 5, "Python", 2, "Customer Data Analytics");
@@ -371,6 +372,13 @@ int main() {
     Project_Manager JTiller("Jackson Tiller", 21, 4959349283, "943 Lake Road", 58493, 934843, 1, 2, 1, "Project+");
     Project_Manager IJones("Indiana Jones", 44, 8439839834, "359 Rameon Road", 85433, 483912, 2, 10, 12, "Bachelors in CIS");
     Project_Manager ORomen("Olivia Romen", 25, 4385483495, "25 Creston Ave", 52393, 930485, 3, 6, 5, "PMP");
+
+    // Printing out total number of employees along with the count of each employee within a given occupation
+    cout << "In total there are currently " << Employee::total_employees << " working at the company." << endl;
+    cout << "There are a total of " << Software_Developer::total_swdevs << " Software Developers." << endl;
+    cout << "There are a total of " << Network_Engineer::total_network_engineers << " Network Engineers." << endl;
+    cout << "There are a total of " << QA_Engineer::total_QA_engineers << " Quality Assurance Engineers." << endl;
+    cout << "There are a total of " << Project_Manager::total_project_managers << " Project Managers." << endl;
 
     return 0;
 }
